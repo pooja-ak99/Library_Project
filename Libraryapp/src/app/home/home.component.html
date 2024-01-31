@@ -1,0 +1,21 @@
+<div style="height:230px;width:300px;background-color:darkseagreen;position: relative;left: 480px;">
+  <div *ngIf="isAuthenticated==true">
+
+    
+    <button class="btn btn-light mt-4" [routerLink]="['view']" style="position:relative;left:85px;width:130px"><b>VIEW BOOK</b></button><br><br>
+    <button class="btn btn-light" [routerLink]="['add']" style="position:relative;left:85px;width:130px"><b>ADD BOOK</b></button><br><br>
+    <button class="btn btn-light" (click)="logout()" style="position:relative;left:85px;width:130px"><b>LOGOUT</b></button><br>
+  
+  </div>
+  <div *ngIf="isAuthenticated==false">
+
+    <button class="btn btn-light mt-5" [routerLink]="['register']" style="margin-top: 30px;position:relative;left:85px;width:130px"><b>REGISTER</b></button><br><br>
+    <button class="btn btn-light" [routerLink]="['login']" style="position:relative;left:85px;width:130px"><b>LOGIN</b></button><br><br>
+
+    
+  </div>
+  </div>
+
+
+  <br>
+  <!-- <button class="btn btn-light" (click)="view()">LINK TO VIEW BOOK</button> -->

@@ -1,0 +1,15 @@
+td
+{
+    color:white;
+    border-right: 1px solid paleturquoise;
+}
+
+th
+{
+    color:chartreuse;
+    border-right: 1px solid paleturquoise;
+}
+
+table{
+    border: 3px solid paleturquoise;
+}

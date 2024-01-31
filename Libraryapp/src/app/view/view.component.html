@@ -1,0 +1,22 @@
+<h1 style="color:cyan;font-weight: bold;">VIEW BOOKS</h1>
+<table class="table table-bordered"  style="text-align: center;">
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+        <th>PRICE</th>
+        <th>VIEW</th>
+        <th>EDIT</th>
+        <th>DELETE</th>
+        
+    </tr>
+    <tr *ngFor = "let i of data">
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.author}}</td>
+        <td>{{i.price}}</td>
+        <td><button (click)="view(i.id)" class="btn btn-info" style="color:white">VIEW</button></td>
+        <td><button (click)="edit(i.id)" class="btn btn-warning" style="color:white">EDIT</button></td>
+        <td><button (click)="delete(i.id)" class="btn btn-danger" style="color:white">DELETE</button></td>
+    </tr>
+</table>

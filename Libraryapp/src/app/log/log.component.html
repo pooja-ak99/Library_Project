@@ -1,0 +1,16 @@
+<h1 style="color:white;font-weight: bold;">LOG IN</h1>
+<br>
+<div style="width:500px;position:relative;left:50px">
+<form #form="ngForm" (ngSubmit)="onsubmit()">
+    <div class="mb-3">
+        <label class="form-label" style="font-weight: bold;color: white;">Username</label>
+        <input type="text" name="name" #name="ngModel" [(ngModel)]="data1.username" class="form-control" placeholder="Enter username">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" style="font-weight: bold;color: white;">Password</label>
+        <input type="password" name="password" #password="ngModel" [(ngModel)]="data1.password" class="form-control" placeholder="Enter password">
+      </div>
+      <br>
+      <input type="submit" class="form-control">
+</form>
+</div>
